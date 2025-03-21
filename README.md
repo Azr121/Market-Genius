@@ -1,95 +1,3 @@
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  color: #333;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background: #333;
-  color: #fff;
-}
-
-header .logo img {
-  height: 50px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.hero {
-  background: url('images/hero-bg.jpg') no-repeat center center/cover;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-}
-
-.hero-content h1 {
-  font-size: 3rem;
-}
-
-.cta-button {
-  background: #ff6f61;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.services, .about, .portfolio, .contact {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-.service-cards, .team, .portfolio-grid {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.card, .team-member, .portfolio-item {
-  flex: 1 1 300px;
-  background: #f4f4f4;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-}
-
-footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
-
-footer .social-links {
-  margin-top: 10px;
-}
-
-footer .social-links a {
-  color: #fff;
-  margin: 0 10px;
-  text-decoration: none;
-}
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -209,13 +117,94 @@ footer .social-links a {
 </body>
 </html>
 
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
 
-// Add interactivity here (e.g., smooth scrolling, form validation)
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
-});
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  background: url('images/hero-bg.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+}
+
+.cta-button {
+  background: #ff6f61;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.services, .about, .portfolio, .contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.service-cards, .team, .portfolio-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card, .team-member, .portfolio-item {
+  flex: 1 1 300px;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .social-links {
+  margin-top: 10px;
+}
+
+footer .social-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
