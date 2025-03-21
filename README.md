@@ -210,4 +210,12 @@ footer .social-links a {
 </html>
 
 
-
+// Add interactivity here (e.g., smooth scrolling, form validation)
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
